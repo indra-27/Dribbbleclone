@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400&family=Open+Sans:ital,wght@0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><b>Find Talent</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><b>Inspiration</b></a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>Learn Design</b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><b>UX Diploma</b></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Jobs</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Go Pro</b></a>
+          </li>
+          <!-- <a class="navbar-brand" justify-content="center" href="#"><i>Dribbble</i></a> -->
+          <a  href="index.html"><img src="img/dribbblelogo.png"></a>
+        </ul>
+        <!-- <img src="img/dribbblelogo.png"> -->
+        <div class="searchbox">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="Search..." name="" id="">
+        </div>
+        <button class="btn btn-outline-dark border-0 rounded-pill bg-light" type="button" data-bs-toggle="modal"
+          data-bs-target="#examplemodel"><b>Login</b></button>
+        <button class="btn btn-outline-light border-0 rounded-pill  bg-dark" type="button"><b>Signin</b></button>
+      </div>
+    </div>
+
+  </nav>
+
+
+  
+
+  
+  </div>
+  <br><br>
+  <h1 style="font-size: 70px;width:fit-content;margin-left:25%;justify-content:center;align-items:center;"><span>Discover the world's top <br>designers & creatives</span></h1>
+  <h6 class="" style="width:fit-content;margin-top:50px;margin-left:30%;">Dribbble is the leading destination to find & showcase creative work and<br> home to the world's best design professionals.</h6>
+  
+  <div style="margin-left: 5%">
+    <select name="labels" id="labels">
+        <option value="popular">Popular</option>
+        <option value="n&n">New & Networthy</option>
+      </select>
+      <button type="button" onclick="location.href='mainpage.html'" class="btn border-rounded" id="discover" style="color: black;margin-left:5%">Discover</button>
+      <button type="button" onclick="location.href='PAnimation.html';" class="btn border-rounded" id= "Animation" style="color: black;">Animation</button>
+      <button type="button" onclick="branding();" class="btn border-rounded" id="Branding" style="color: black;">Branding</button>
+      <button type="button" onclick="illus();" class="btn border-rounded" id="Illustration" style="color: black;">Illustration</button>
+      <button type="button" onclick="mobile();" class="btn border-rounded" id="Mobile" style="color: black;">Mobile</button>
+      <button type="button" onclick="print();" class="btn border-rounded" id="Print" style="color: black;">Print</button>
+      <button type="button" onclick="prodes();" class="btn border-rounded" id="ProductDesign" style="color: black;">Product Design</button>
+      <button type="button" onclick="typo();" class="btn border-rounded" id="Typography" style="color: black;">Typography</button>
+      <button type="button" onclick="webdesign();" class="btn border-rounded" id="WebDesign" style="color: black;">Web Design</button>
+  </div>
+  
+  <div class="imgclass">
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="getid(this.id)" name="button1" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" name="button2" id="btnh2" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh3" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh4" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh5" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh6" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+    <div>
+      <img
+        src="https://cdn.dribbble.com/userupload/11424609/file/original-4dfc90ab61e85b6b78ea0e2849d1a0e9.png?resize=400x300&vertical=center"
+        alt="">
+      <p>Lorem ipsum dolor sit <Button onclick="Toggle1()" id="btnh1" class="btn"><i
+            class="bi bi-heart-fill"></i></Button></p>
+    </div>
+
+  </div>
+  
+  <script>
+    // First Like Button  
+    var btnvar1;
+    var type;
+    $(document).ready(function() {
+      $(".btn").click(function (event) {
+
+        btnvar1 = event.target.id;
+        Toggle2(btnvar1);
+      });
+    });
+
+    $(document).ready(function(){
+        $(".btn").click(function()
+        {
+            type = document.getElementsByClassName("btn");
+        });
+    });
+
+    <!-- function getid(e)
+    {
+     e = e || window.event;
+     e = e.target || e.srcElement;
+     Toggle1(e.id);
+    } -->
+
+    var label = document.getElementById("labels");
+    var value = label.value;
+
+    function Discover()
+    {
+        if(value == "popular")
+        location.href= "mainpage.href";
+        else if(value == "n&n")
+        location.href = "Nmainpage.href";
+    }
+    
+    function animation()
+    {
+        if(value == "popular")
+        location.href= "PAnimation.href";
+        else if(value == "n&n")
+        location.href = "NAnimation.href";
+    }
+
+
+    function Toggle2(id) {
+      if (id.style.color == "red") {
+        id.style.color = "grey"
+      }
+      else {
+        id.style.color = "red"
+      }
+    }
+
+    
+    
+
+  </script>
+
+</body>
+
+</html>
